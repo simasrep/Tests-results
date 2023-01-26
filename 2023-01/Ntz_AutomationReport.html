@@ -1,0 +1,2383 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Aruodas Web Selenium Automation</title>
+<link rel="apple-touch-icon" href="spark/logo.png">
+<link rel="shortcut icon" href="spark/logo.png">
+<link rel="stylesheet" href="spark/spark-style.css">
+<link rel="stylesheet" href="spark/font-awesome.min.css">
+<script src="spark/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('spark/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Aruodas Web version report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">2023-01-26 18:03:38</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>2023-01-26 18:03:38</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>2023-01-26 18:08:52</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>48</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>48</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'><b>48</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>48</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"AdFilterAndSortingTests.AdSearchFilterTests: FindNTSearchFilterTest":16.014,"AdsTests.AdMapFunctionality: AdMapClickAdSummaryOpens":15.675,"AdFilterAndSortingTests.AdSearchFilterTests: FlatSearchFilterTest":15.093,"AdsTests.AdMapFunctionality: CheckIfInsideAdFullGalleryHowToGetThereWorks":13.726,"AdsTests.AdMapFunctionality: CheckIfInsideAdFullGalleryInTheMapWorks":13.329,"AdFilterAndSortingTests.AdSearchFilterTests: GarageRentSearchFilterTest":14.169,"AdsTests.AdMapFunctionality: CheckIfInsideAdFullGalleryStreetViewWorks":14.41,"AdFilterAndSortingTests.AdSearchFilterTests: GarageSearchFilterTest":14.561,"AdsTests.AdMapFunctionality: CheckIfInsideAdHowToGetThereWorks":13.101,"AdFilterAndSortingTests.AdSearchFilterTests: HouseRentSearchFilterTest":14.151,"AdsTests.AdMapFunctionality: CheckIfInsideAdInTheMapWorks":12.98,"AdFilterAndSortingTests.AdSearchFilterTests: HouseSearchFilterTest":14.016,"AdsTests.AdMapFunctionality: CheckIfInsideAdPhotoChangeButtonsWorks":12.519,"AdFilterAndSortingTests.AdSearchFilterTests: PlotRentSearchFilterTest":14.134,"AdsTests.AdMapFunctionality: CheckIfInsideAdStreetViewWorks":13.664,"AdFilterAndSortingTests.AdSearchFilterTests: PlotSearchFilterTest":0.003,"AdFilterAndSortingTests.AdSearchFilterTests: PremisesFloorLevelFrom":5.964,"AdFilterAndSortingTests.AdSearchFilterTests: PremisesFloorLevelFromTo":6.306,"AdsTests.AdMapFunctionality: CheckIfStreetViewWorks":6.173,"AdFilterAndSortingTests.AdSearchFilterTests: PremisesFloorLevelTo":5.893,"AdsTests.AdMapFunctionality: CheckInsideFullGalleryCopyAdLink":21.899,"AdFilterAndSortingTests.AdSearchFilterTests: PremisesRentSearchFilterTest":14.295,"AdFilterAndSortingTests.AdSearchFilterTests: PremisesRoomsFrom":5.852,"AdsTests.AdMapFunctionality: CheckInsideFullGalleryFacebookShareButton":13.854,"AdFilterAndSortingTests.AdSearchFilterTests: PremisesRoomsFromTo":5.867,"AdFilterAndSortingTests.AdSearchFilterTests: PremisesSearchFilterTest":14.056,"AdsTests.AdMapFunctionality: CheckInsideFullGalleryFriendShareButton":14.584,"AdFilterAndSortingTests.AdSearchFilterTests: PremisesSizeFrom":5.879,"AdFilterAndSortingTests.AdSearchFilterTests: PremisesSizeFromTo":5.95,"AdsTests.AdMapFunctionality: CloseAndOpenPhotoGallery":13.327,"AdFilterAndSortingTests.AdSearchFilterTests: PremisesSizeTo":5.744,"AdFilterAndSortingTests.AdSearchFilterTests: PriceFromFilterTest":8.425,"AdsTests.AdMapFunctionality: DoFullGalleryPhotoSwitchButtonsWork":15.083,"AdFilterAndSortingTests.AdSearchFilterTests: PriceFromToFilterTest":8.396,"AdFilterAndSortingTests.AdSearchFilterTests: PriceToFilterTest":8.418,"AdsTests.AdsFunctionalityTests: AddNewAdTest":5.158,"AdsTests.AdsFunctionalityTests: CopyAdLink":15.734,"AdFilterAndSortingTests.SideListAdSortingTests: CheapOnTopSortTest":10.295,"AdFilterAndSortingTests.SideListAdSortingTests: ExpensiveOnTopSortTest":8.818,"AdsTests.AdsFunctionalityTests: IsKinderGartenDataPresentAppartment":11.512,"AdFilterAndSortingTests.SideListAdSortingTests: ImportantFirstSortTest":6.127,"AdsTests.AdsFunctionalityTests: IsKinderGartenDataPresentHouse":11.753,"AdsTests.AdsFunctionalityTests: IsSchoolDataPresentAppartment":11.472,"AdsTests.AdsFunctionalityTests: IsSchoolDataPresentHouse":12.278,"AdsTests.AdsFunctionalityTests: IsShopDataPresentAppartment":11.357,"AdsTests.AdsFunctionalityTests: IsShopDataPresentHouse":11.617,"AdsTests.AdsFunctionalityTests: stopsApartment":11.371,"AdsTests.AdsFunctionalityTests: stopsHouse":11.699
+};
+</script>
+<div class="row">
+<div class="col-md-4 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Company</td>
+<td>Diginet LTU</td>
+</tr>
+<tr>
+<td>Aruodas WWW Automation</td>
+<td>Selenium WebDriver</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 48,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 48,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 48
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: FindNTSearchFilterTest</p>
+            <p class="text-sm">
+              <span>18:03:42 PM</span> / <span>00:16:014</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: FindNTSearchFilterTest</h5>
+<span class='badge badge-success'>01.26.2023 18:03:42</span>
+<span class='badge badge-danger'>01.26.2023 18:03:58</span>
+<span class='badge badge-default'>00:16:014</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:03:42 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> FindNTSearchFilterTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:03:58 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test FindNTSearchFilterTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdMapFunctionality: AdMapClickAdSummaryOpens</p>
+            <p class="text-sm">
+              <span>18:03:43 PM</span> / <span>00:15:675</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdMapFunctionality: AdMapClickAdSummaryOpens</h5>
+<span class='badge badge-success'>01.26.2023 18:03:43</span>
+<span class='badge badge-danger'>01.26.2023 18:03:59</span>
+<span class='badge badge-default'>00:15:675</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:03:43 PM</td>
+        <td>
+          Test AdsTests.AdMapFunctionality -> AdMapClickAdSummaryOpens successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:03:59 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test AdMapClickAdSummaryOpens passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: FlatSearchFilterTest</p>
+            <p class="text-sm">
+              <span>18:03:58 PM</span> / <span>00:15:093</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: FlatSearchFilterTest</h5>
+<span class='badge badge-success'>01.26.2023 18:03:58</span>
+<span class='badge badge-danger'>01.26.2023 18:04:13</span>
+<span class='badge badge-default'>00:15:093</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:03:58 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> FlatSearchFilterTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:04:13 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test FlatSearchFilterTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdMapFunctionality: CheckIfInsideAdFullGalleryHowToGetThereWorks</p>
+            <p class="text-sm">
+              <span>18:03:59 PM</span> / <span>00:13:726</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdMapFunctionality: CheckIfInsideAdFullGalleryHowToGetThereWorks</h5>
+<span class='badge badge-success'>01.26.2023 18:03:59</span>
+<span class='badge badge-danger'>01.26.2023 18:04:12</span>
+<span class='badge badge-default'>00:13:726</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:03:59 PM</td>
+        <td>
+          Test AdsTests.AdMapFunctionality -> CheckIfInsideAdFullGalleryHowToGetThereWorks successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:04:12 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test CheckIfInsideAdFullGalleryHowToGetThereWorks passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdMapFunctionality: CheckIfInsideAdFullGalleryInTheMapWorks</p>
+            <p class="text-sm">
+              <span>18:04:12 PM</span> / <span>00:13:329</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdMapFunctionality: CheckIfInsideAdFullGalleryInTheMapWorks</h5>
+<span class='badge badge-success'>01.26.2023 18:04:12</span>
+<span class='badge badge-danger'>01.26.2023 18:04:26</span>
+<span class='badge badge-default'>00:13:329</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:04:12 PM</td>
+        <td>
+          Test AdsTests.AdMapFunctionality -> CheckIfInsideAdFullGalleryInTheMapWorks successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:04:26 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test CheckIfInsideAdFullGalleryInTheMapWorks passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: GarageRentSearchFilterTest</p>
+            <p class="text-sm">
+              <span>18:04:13 PM</span> / <span>00:14:169</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: GarageRentSearchFilterTest</h5>
+<span class='badge badge-success'>01.26.2023 18:04:13</span>
+<span class='badge badge-danger'>01.26.2023 18:04:27</span>
+<span class='badge badge-default'>00:14:169</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:04:13 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> GarageRentSearchFilterTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:04:27 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test GarageRentSearchFilterTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdMapFunctionality: CheckIfInsideAdFullGalleryStreetViewWorks</p>
+            <p class="text-sm">
+              <span>18:04:26 PM</span> / <span>00:14:410</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdMapFunctionality: CheckIfInsideAdFullGalleryStreetViewWorks</h5>
+<span class='badge badge-success'>01.26.2023 18:04:26</span>
+<span class='badge badge-danger'>01.26.2023 18:04:40</span>
+<span class='badge badge-default'>00:14:410</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:04:26 PM</td>
+        <td>
+          Test AdsTests.AdMapFunctionality -> CheckIfInsideAdFullGalleryStreetViewWorks successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:04:40 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test CheckIfInsideAdFullGalleryStreetViewWorks passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: GarageSearchFilterTest</p>
+            <p class="text-sm">
+              <span>18:04:27 PM</span> / <span>00:14:561</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: GarageSearchFilterTest</h5>
+<span class='badge badge-success'>01.26.2023 18:04:27</span>
+<span class='badge badge-danger'>01.26.2023 18:04:42</span>
+<span class='badge badge-default'>00:14:561</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:04:27 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> GarageSearchFilterTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:04:42 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test GarageSearchFilterTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdMapFunctionality: CheckIfInsideAdHowToGetThereWorks</p>
+            <p class="text-sm">
+              <span>18:04:40 PM</span> / <span>00:13:101</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdMapFunctionality: CheckIfInsideAdHowToGetThereWorks</h5>
+<span class='badge badge-success'>01.26.2023 18:04:40</span>
+<span class='badge badge-danger'>01.26.2023 18:04:53</span>
+<span class='badge badge-default'>00:13:101</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:04:40 PM</td>
+        <td>
+          Test AdsTests.AdMapFunctionality -> CheckIfInsideAdHowToGetThereWorks successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:04:53 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test CheckIfInsideAdHowToGetThereWorks passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: HouseRentSearchFilterTest</p>
+            <p class="text-sm">
+              <span>18:04:42 PM</span> / <span>00:14:151</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: HouseRentSearchFilterTest</h5>
+<span class='badge badge-success'>01.26.2023 18:04:42</span>
+<span class='badge badge-danger'>01.26.2023 18:04:56</span>
+<span class='badge badge-default'>00:14:151</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:04:42 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> HouseRentSearchFilterTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:04:56 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test HouseRentSearchFilterTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdMapFunctionality: CheckIfInsideAdInTheMapWorks</p>
+            <p class="text-sm">
+              <span>18:04:53 PM</span> / <span>00:12:980</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdMapFunctionality: CheckIfInsideAdInTheMapWorks</h5>
+<span class='badge badge-success'>01.26.2023 18:04:53</span>
+<span class='badge badge-danger'>01.26.2023 18:05:06</span>
+<span class='badge badge-default'>00:12:980</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:04:53 PM</td>
+        <td>
+          Test AdsTests.AdMapFunctionality -> CheckIfInsideAdInTheMapWorks successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:05:06 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test CheckIfInsideAdInTheMapWorks passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: HouseSearchFilterTest</p>
+            <p class="text-sm">
+              <span>18:04:56 PM</span> / <span>00:14:016</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: HouseSearchFilterTest</h5>
+<span class='badge badge-success'>01.26.2023 18:04:56</span>
+<span class='badge badge-danger'>01.26.2023 18:05:10</span>
+<span class='badge badge-default'>00:14:016</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:04:56 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> HouseSearchFilterTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:05:10 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test HouseSearchFilterTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdMapFunctionality: CheckIfInsideAdPhotoChangeButtonsWorks</p>
+            <p class="text-sm">
+              <span>18:05:06 PM</span> / <span>00:12:519</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdMapFunctionality: CheckIfInsideAdPhotoChangeButtonsWorks</h5>
+<span class='badge badge-success'>01.26.2023 18:05:06</span>
+<span class='badge badge-danger'>01.26.2023 18:05:19</span>
+<span class='badge badge-default'>00:12:519</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:05:06 PM</td>
+        <td>
+          Test AdsTests.AdMapFunctionality -> CheckIfInsideAdPhotoChangeButtonsWorks successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:05:19 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test CheckIfInsideAdPhotoChangeButtonsWorks passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PlotRentSearchFilterTest</p>
+            <p class="text-sm">
+              <span>18:05:10 PM</span> / <span>00:14:134</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PlotRentSearchFilterTest</h5>
+<span class='badge badge-success'>01.26.2023 18:05:10</span>
+<span class='badge badge-danger'>01.26.2023 18:05:24</span>
+<span class='badge badge-default'>00:14:134</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:05:10 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PlotRentSearchFilterTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:05:24 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PlotRentSearchFilterTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdMapFunctionality: CheckIfInsideAdStreetViewWorks</p>
+            <p class="text-sm">
+              <span>18:05:19 PM</span> / <span>00:13:664</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdMapFunctionality: CheckIfInsideAdStreetViewWorks</h5>
+<span class='badge badge-success'>01.26.2023 18:05:19</span>
+<span class='badge badge-danger'>01.26.2023 18:05:33</span>
+<span class='badge badge-default'>00:13:664</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:05:19 PM</td>
+        <td>
+          Test AdsTests.AdMapFunctionality -> CheckIfInsideAdStreetViewWorks successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:05:33 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test CheckIfInsideAdStreetViewWorks passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PlotSearchFilterTest</p>
+            <p class="text-sm">
+              <span>18:05:24 PM</span> / <span>00:00:003</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PlotSearchFilterTest</h5>
+<span class='badge badge-success'>01.26.2023 18:05:24</span>
+<span class='badge badge-danger'>01.26.2023 18:05:24</span>
+<span class='badge badge-default'>00:00:003</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:05:24 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PlotSearchFilterTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:05:24 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PlotSearchFilterTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PremisesFloorLevelFrom</p>
+            <p class="text-sm">
+              <span>18:05:24 PM</span> / <span>00:05:964</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PremisesFloorLevelFrom</h5>
+<span class='badge badge-success'>01.26.2023 18:05:24</span>
+<span class='badge badge-danger'>01.26.2023 18:05:30</span>
+<span class='badge badge-default'>00:05:964</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:05:24 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PremisesFloorLevelFrom successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:05:30 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PremisesFloorLevelFrom passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PremisesFloorLevelFromTo</p>
+            <p class="text-sm">
+              <span>18:05:30 PM</span> / <span>00:06:306</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PremisesFloorLevelFromTo</h5>
+<span class='badge badge-success'>01.26.2023 18:05:30</span>
+<span class='badge badge-danger'>01.26.2023 18:05:36</span>
+<span class='badge badge-default'>00:06:306</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:05:30 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PremisesFloorLevelFromTo successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:05:36 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PremisesFloorLevelFromTo passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdMapFunctionality: CheckIfStreetViewWorks</p>
+            <p class="text-sm">
+              <span>18:05:33 PM</span> / <span>00:06:173</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdMapFunctionality: CheckIfStreetViewWorks</h5>
+<span class='badge badge-success'>01.26.2023 18:05:33</span>
+<span class='badge badge-danger'>01.26.2023 18:05:39</span>
+<span class='badge badge-default'>00:06:173</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:05:33 PM</td>
+        <td>
+          Test AdsTests.AdMapFunctionality -> CheckIfStreetViewWorks successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:05:39 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test CheckIfStreetViewWorks passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PremisesFloorLevelTo</p>
+            <p class="text-sm">
+              <span>18:05:36 PM</span> / <span>00:05:893</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PremisesFloorLevelTo</h5>
+<span class='badge badge-success'>01.26.2023 18:05:36</span>
+<span class='badge badge-danger'>01.26.2023 18:05:42</span>
+<span class='badge badge-default'>00:05:893</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:05:36 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PremisesFloorLevelTo successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:05:42 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PremisesFloorLevelTo passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdMapFunctionality: CheckInsideFullGalleryCopyAdLink</p>
+            <p class="text-sm">
+              <span>18:05:39 PM</span> / <span>00:21:899</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdMapFunctionality: CheckInsideFullGalleryCopyAdLink</h5>
+<span class='badge badge-success'>01.26.2023 18:05:39</span>
+<span class='badge badge-danger'>01.26.2023 18:06:01</span>
+<span class='badge badge-default'>00:21:899</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:05:39 PM</td>
+        <td>
+          Test AdsTests.AdMapFunctionality -> CheckInsideFullGalleryCopyAdLink successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:06:01 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test CheckInsideFullGalleryCopyAdLink passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PremisesRentSearchFilterTest</p>
+            <p class="text-sm">
+              <span>18:05:42 PM</span> / <span>00:14:295</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PremisesRentSearchFilterTest</h5>
+<span class='badge badge-success'>01.26.2023 18:05:42</span>
+<span class='badge badge-danger'>01.26.2023 18:05:56</span>
+<span class='badge badge-default'>00:14:295</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:05:42 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PremisesRentSearchFilterTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:05:56 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PremisesRentSearchFilterTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PremisesRoomsFrom</p>
+            <p class="text-sm">
+              <span>18:05:56 PM</span> / <span>00:05:852</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PremisesRoomsFrom</h5>
+<span class='badge badge-success'>01.26.2023 18:05:56</span>
+<span class='badge badge-danger'>01.26.2023 18:06:02</span>
+<span class='badge badge-default'>00:05:852</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:05:56 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PremisesRoomsFrom successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:06:02 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PremisesRoomsFrom passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdMapFunctionality: CheckInsideFullGalleryFacebookShareButton</p>
+            <p class="text-sm">
+              <span>18:06:01 PM</span> / <span>00:13:854</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdMapFunctionality: CheckInsideFullGalleryFacebookShareButton</h5>
+<span class='badge badge-success'>01.26.2023 18:06:01</span>
+<span class='badge badge-danger'>01.26.2023 18:06:15</span>
+<span class='badge badge-default'>00:13:854</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:01 PM</td>
+        <td>
+          Test AdsTests.AdMapFunctionality -> CheckInsideFullGalleryFacebookShareButton successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:06:15 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test CheckInsideFullGalleryFacebookShareButton passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PremisesRoomsFromTo</p>
+            <p class="text-sm">
+              <span>18:06:02 PM</span> / <span>00:05:867</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PremisesRoomsFromTo</h5>
+<span class='badge badge-success'>01.26.2023 18:06:02</span>
+<span class='badge badge-danger'>01.26.2023 18:06:08</span>
+<span class='badge badge-default'>00:05:867</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:02 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PremisesRoomsFromTo successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:06:08 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PremisesRoomsFromTo passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PremisesSearchFilterTest</p>
+            <p class="text-sm">
+              <span>18:06:08 PM</span> / <span>00:14:056</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PremisesSearchFilterTest</h5>
+<span class='badge badge-success'>01.26.2023 18:06:08</span>
+<span class='badge badge-danger'>01.26.2023 18:06:22</span>
+<span class='badge badge-default'>00:14:056</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:08 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PremisesSearchFilterTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:06:22 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PremisesSearchFilterTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdMapFunctionality: CheckInsideFullGalleryFriendShareButton</p>
+            <p class="text-sm">
+              <span>18:06:15 PM</span> / <span>00:14:584</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdMapFunctionality: CheckInsideFullGalleryFriendShareButton</h5>
+<span class='badge badge-success'>01.26.2023 18:06:15</span>
+<span class='badge badge-danger'>01.26.2023 18:06:29</span>
+<span class='badge badge-default'>00:14:584</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:15 PM</td>
+        <td>
+          Test AdsTests.AdMapFunctionality -> CheckInsideFullGalleryFriendShareButton successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:06:29 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test CheckInsideFullGalleryFriendShareButton passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PremisesSizeFrom</p>
+            <p class="text-sm">
+              <span>18:06:22 PM</span> / <span>00:05:879</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PremisesSizeFrom</h5>
+<span class='badge badge-success'>01.26.2023 18:06:22</span>
+<span class='badge badge-danger'>01.26.2023 18:06:28</span>
+<span class='badge badge-default'>00:05:879</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:22 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PremisesSizeFrom successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:06:28 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PremisesSizeFrom passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PremisesSizeFromTo</p>
+            <p class="text-sm">
+              <span>18:06:28 PM</span> / <span>00:05:950</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PremisesSizeFromTo</h5>
+<span class='badge badge-success'>01.26.2023 18:06:28</span>
+<span class='badge badge-danger'>01.26.2023 18:06:34</span>
+<span class='badge badge-default'>00:05:950</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:28 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PremisesSizeFromTo successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:06:34 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PremisesSizeFromTo passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdMapFunctionality: CloseAndOpenPhotoGallery</p>
+            <p class="text-sm">
+              <span>18:06:29 PM</span> / <span>00:13:327</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdMapFunctionality: CloseAndOpenPhotoGallery</h5>
+<span class='badge badge-success'>01.26.2023 18:06:29</span>
+<span class='badge badge-danger'>01.26.2023 18:06:43</span>
+<span class='badge badge-default'>00:13:327</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:29 PM</td>
+        <td>
+          Test AdsTests.AdMapFunctionality -> CloseAndOpenPhotoGallery successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:06:43 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test CloseAndOpenPhotoGallery passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PremisesSizeTo</p>
+            <p class="text-sm">
+              <span>18:06:34 PM</span> / <span>00:05:744</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PremisesSizeTo</h5>
+<span class='badge badge-success'>01.26.2023 18:06:34</span>
+<span class='badge badge-danger'>01.26.2023 18:06:40</span>
+<span class='badge badge-default'>00:05:744</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:34 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PremisesSizeTo successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:06:40 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PremisesSizeTo passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PriceFromFilterTest</p>
+            <p class="text-sm">
+              <span>18:06:40 PM</span> / <span>00:08:425</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PriceFromFilterTest</h5>
+<span class='badge badge-success'>01.26.2023 18:06:40</span>
+<span class='badge badge-danger'>01.26.2023 18:06:48</span>
+<span class='badge badge-default'>00:08:425</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:40 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PriceFromFilterTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:06:48 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PriceFromFilterTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdMapFunctionality: DoFullGalleryPhotoSwitchButtonsWork</p>
+            <p class="text-sm">
+              <span>18:06:43 PM</span> / <span>00:15:083</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdMapFunctionality: DoFullGalleryPhotoSwitchButtonsWork</h5>
+<span class='badge badge-success'>01.26.2023 18:06:43</span>
+<span class='badge badge-danger'>01.26.2023 18:06:58</span>
+<span class='badge badge-default'>00:15:083</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:43 PM</td>
+        <td>
+          Test AdsTests.AdMapFunctionality -> DoFullGalleryPhotoSwitchButtonsWork successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:06:58 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test DoFullGalleryPhotoSwitchButtonsWork passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PriceFromToFilterTest</p>
+            <p class="text-sm">
+              <span>18:06:48 PM</span> / <span>00:08:396</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PriceFromToFilterTest</h5>
+<span class='badge badge-success'>01.26.2023 18:06:48</span>
+<span class='badge badge-danger'>01.26.2023 18:06:57</span>
+<span class='badge badge-default'>00:08:396</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:48 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PriceFromToFilterTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:06:57 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PriceFromToFilterTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.AdSearchFilterTests: PriceToFilterTest</p>
+            <p class="text-sm">
+              <span>18:06:57 PM</span> / <span>00:08:418</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.AdSearchFilterTests: PriceToFilterTest</h5>
+<span class='badge badge-success'>01.26.2023 18:06:57</span>
+<span class='badge badge-danger'>01.26.2023 18:07:05</span>
+<span class='badge badge-default'>00:08:418</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:57 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.AdSearchFilterTests -> PriceToFilterTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:07:05 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test PriceToFilterTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="36"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdsFunctionalityTests: AddNewAdTest</p>
+            <p class="text-sm">
+              <span>18:06:58 PM</span> / <span>00:05:158</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdsFunctionalityTests: AddNewAdTest</h5>
+<span class='badge badge-success'>01.26.2023 18:06:58</span>
+<span class='badge badge-danger'>01.26.2023 18:07:03</span>
+<span class='badge badge-default'>00:05:158</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:58 PM</td>
+        <td>
+          Test AdsTests.AdsFunctionalityTests -> AddNewAdTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:07:03 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test AddNewAdTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="37"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdsFunctionalityTests: CopyAdLink</p>
+            <p class="text-sm">
+              <span>18:07:03 PM</span> / <span>00:15:734</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdsFunctionalityTests: CopyAdLink</h5>
+<span class='badge badge-success'>01.26.2023 18:07:03</span>
+<span class='badge badge-danger'>01.26.2023 18:07:19</span>
+<span class='badge badge-default'>00:15:734</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:07:03 PM</td>
+        <td>
+          Test AdsTests.AdsFunctionalityTests -> CopyAdLink successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:07:19 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test CopyAdLink passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="38"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.SideListAdSortingTests: CheapOnTopSortTest</p>
+            <p class="text-sm">
+              <span>18:07:06 PM</span> / <span>00:10:295</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.SideListAdSortingTests: CheapOnTopSortTest</h5>
+<span class='badge badge-success'>01.26.2023 18:07:06</span>
+<span class='badge badge-danger'>01.26.2023 18:07:17</span>
+<span class='badge badge-default'>00:10:295</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:07:06 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.SideListAdSortingTests -> CheapOnTopSortTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:07:17 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test CheapOnTopSortTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="39"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.SideListAdSortingTests: ExpensiveOnTopSortTest</p>
+            <p class="text-sm">
+              <span>18:07:17 PM</span> / <span>00:08:818</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.SideListAdSortingTests: ExpensiveOnTopSortTest</h5>
+<span class='badge badge-success'>01.26.2023 18:07:17</span>
+<span class='badge badge-danger'>01.26.2023 18:07:25</span>
+<span class='badge badge-default'>00:08:818</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=39</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:07:17 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.SideListAdSortingTests -> ExpensiveOnTopSortTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:07:25 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test ExpensiveOnTopSortTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="40"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdsFunctionalityTests: IsKinderGartenDataPresentAppartment</p>
+            <p class="text-sm">
+              <span>18:07:19 PM</span> / <span>00:11:512</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdsFunctionalityTests: IsKinderGartenDataPresentAppartment</h5>
+<span class='badge badge-success'>01.26.2023 18:07:19</span>
+<span class='badge badge-danger'>01.26.2023 18:07:30</span>
+<span class='badge badge-default'>00:11:512</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=40</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:07:19 PM</td>
+        <td>
+          Test AdsTests.AdsFunctionalityTests -> IsKinderGartenDataPresentAppartment successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:07:30 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test IsKinderGartenDataPresentAppartment passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="41"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdFilterAndSortingTests.SideListAdSortingTests: ImportantFirstSortTest</p>
+            <p class="text-sm">
+              <span>18:07:25 PM</span> / <span>00:06:127</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdFilterAndSortingTests.SideListAdSortingTests: ImportantFirstSortTest</h5>
+<span class='badge badge-success'>01.26.2023 18:07:25</span>
+<span class='badge badge-danger'>01.26.2023 18:07:31</span>
+<span class='badge badge-default'>00:06:127</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=41</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:07:25 PM</td>
+        <td>
+          Test AdFilterAndSortingTests.SideListAdSortingTests -> ImportantFirstSortTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:07:31 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test ImportantFirstSortTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="42"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdsFunctionalityTests: IsKinderGartenDataPresentHouse</p>
+            <p class="text-sm">
+              <span>18:07:30 PM</span> / <span>00:11:753</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdsFunctionalityTests: IsKinderGartenDataPresentHouse</h5>
+<span class='badge badge-success'>01.26.2023 18:07:30</span>
+<span class='badge badge-danger'>01.26.2023 18:07:42</span>
+<span class='badge badge-default'>00:11:753</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=42</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:07:30 PM</td>
+        <td>
+          Test AdsTests.AdsFunctionalityTests -> IsKinderGartenDataPresentHouse successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:07:42 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test IsKinderGartenDataPresentHouse passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="43"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdsFunctionalityTests: IsSchoolDataPresentAppartment</p>
+            <p class="text-sm">
+              <span>18:07:42 PM</span> / <span>00:11:472</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdsFunctionalityTests: IsSchoolDataPresentAppartment</h5>
+<span class='badge badge-success'>01.26.2023 18:07:42</span>
+<span class='badge badge-danger'>01.26.2023 18:07:53</span>
+<span class='badge badge-default'>00:11:472</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=43</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:07:42 PM</td>
+        <td>
+          Test AdsTests.AdsFunctionalityTests -> IsSchoolDataPresentAppartment successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:07:53 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test IsSchoolDataPresentAppartment passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="44"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdsFunctionalityTests: IsSchoolDataPresentHouse</p>
+            <p class="text-sm">
+              <span>18:07:53 PM</span> / <span>00:12:278</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdsFunctionalityTests: IsSchoolDataPresentHouse</h5>
+<span class='badge badge-success'>01.26.2023 18:07:53</span>
+<span class='badge badge-danger'>01.26.2023 18:08:06</span>
+<span class='badge badge-default'>00:12:278</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=44</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:07:53 PM</td>
+        <td>
+          Test AdsTests.AdsFunctionalityTests -> IsSchoolDataPresentHouse successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:08:06 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test IsSchoolDataPresentHouse passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="45"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdsFunctionalityTests: IsShopDataPresentAppartment</p>
+            <p class="text-sm">
+              <span>18:08:06 PM</span> / <span>00:11:357</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdsFunctionalityTests: IsShopDataPresentAppartment</h5>
+<span class='badge badge-success'>01.26.2023 18:08:06</span>
+<span class='badge badge-danger'>01.26.2023 18:08:17</span>
+<span class='badge badge-default'>00:11:357</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=45</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:08:06 PM</td>
+        <td>
+          Test AdsTests.AdsFunctionalityTests -> IsShopDataPresentAppartment successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:08:17 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test IsShopDataPresentAppartment passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="46"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdsFunctionalityTests: IsShopDataPresentHouse</p>
+            <p class="text-sm">
+              <span>18:08:17 PM</span> / <span>00:11:617</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdsFunctionalityTests: IsShopDataPresentHouse</h5>
+<span class='badge badge-success'>01.26.2023 18:08:17</span>
+<span class='badge badge-danger'>01.26.2023 18:08:29</span>
+<span class='badge badge-default'>00:11:617</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=46</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:08:17 PM</td>
+        <td>
+          Test AdsTests.AdsFunctionalityTests -> IsShopDataPresentHouse successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:08:29 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test IsShopDataPresentHouse passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="47"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdsFunctionalityTests: stopsApartment</p>
+            <p class="text-sm">
+              <span>18:08:29 PM</span> / <span>00:11:371</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdsFunctionalityTests: stopsApartment</h5>
+<span class='badge badge-success'>01.26.2023 18:08:29</span>
+<span class='badge badge-danger'>01.26.2023 18:08:40</span>
+<span class='badge badge-default'>00:11:371</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=47</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:08:29 PM</td>
+        <td>
+          Test AdsTests.AdsFunctionalityTests -> stopsApartment successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:08:40 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test stopsApartment passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="48"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AdsTests.AdsFunctionalityTests: stopsHouse</p>
+            <p class="text-sm">
+              <span>18:08:40 PM</span> / <span>00:11:699</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AdsTests.AdsFunctionalityTests: stopsHouse</h5>
+<span class='badge badge-success'>01.26.2023 18:08:40</span>
+<span class='badge badge-danger'>01.26.2023 18:08:52</span>
+<span class='badge badge-default'>00:11:699</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=48</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:08:40 PM</td>
+        <td>
+          Test AdsTests.AdsFunctionalityTests -> stopsHouse successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:08:52 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test stopsHouse passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="spark/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
