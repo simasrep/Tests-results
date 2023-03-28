@@ -1,0 +1,1257 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chat Web Selenium Automation</title>
+<link rel="apple-touch-icon" href="spark/logo.png">
+<link rel="shortcut icon" href="spark/logo.png">
+<link rel="stylesheet" href="spark/spark-style.css">
+<link rel="stylesheet" href="spark/font-awesome.min.css">
+<script src="spark/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('spark/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Chat Web version report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">2023-03-28 15:25:18</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>2023-03-28 15:25:18</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>2023-03-28 15:33:10</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>22</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>22</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'><b>22</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>22</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"desktop.StartChatAsBuyerTest: startChatMessageBuyerAR":32.73,"desktop.StartChatAsBuyerTest: answerChatMessageSellerAR":20.213,"desktop.StartChatAsBuyerTest: answerChatMessageBuyerAR":17.878,"desktop.StartChatAsBuyerTest: readLastChatMessageSellerAR":16.049,"desktop.StartChatAsBuyerTest: hideChatMessageSellerAR":16.744,"desktop.StartChatAsBuyerTest: unhideChatMessageBuyerAR":13.431,"desktop.StartChatAsBuyerTest: checkUnhideChatMessageSellerAR":12.816,"desktop.StartChatAsBuyerTest: blockChatMessageSellerAR":13.048,"desktop.StartChatAsBuyerTest: checkBlockChatMessageBuyerAR":9.702,"desktop.StartChatAsBuyerTest: unBlockChatMessageInDBCheckBuyerAR":29.869,"desktop.StartChatAsBuyerTest: notBlockingByEightSameMessagesCheckSellerAR":38.266,"desktop.StartChatAsBuyerTest: messagesWasSendCheckBuyerAR":12.212,"desktop.StartChatAsBuyerTest: blockingByEightSameMessagesLikeBuyerCheckSellerAR":38.189,"desktop.StartChatAsBuyerTest: userWasBlockedCheckSellerAR":15.97,"desktop.StartChatAsBuyerTest: lastChanceUnblockFraudCheckSellerAR":21.114,"desktop.StartChatAsBuyerTest: blockChatBuyerAR":10.398,"desktop.StartChatAsBuyerTest: checkBlockChatMessageSellerAR":11.271,"desktop.StartChatAsBuyerTest: unBlockChatMessageBuyerAR":13.48,"desktop.StartChatAsBuyerTest: readMessageAfterUnblockingSellerAR":10.378,"desktop.BlockChatTest: blockChatAsSeller":53.506,"desktop.StartChatAsSellerTest: startChatSellerAR":11.641,"desktop.StartChatAsSellerTest: startChatSellerSK":10.469
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Company</td>
+<td>Diginet LTU</td>
+</tr>
+<tr>
+<td>CHAT WWW Automation</td>
+<td>Selenium WebDriver</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 22,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 22,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 22
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: startChatMessageBuyerAR</p>
+            <p class="text-sm">
+              <span>3:26:00 PM</span> / <span>00:00:32:730</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: startChatMessageBuyerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:26:00 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:26:33 PM</span>
+<span class='badge badge-default'>00:00:32:730</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:26:00 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> startChatMessageBuyerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:26:33 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test startChatMessageBuyerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: answerChatMessageSellerAR</p>
+            <p class="text-sm">
+              <span>3:26:33 PM</span> / <span>00:00:20:213</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: answerChatMessageSellerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:26:33 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:26:53 PM</span>
+<span class='badge badge-default'>00:00:20:213</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:26:33 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> answerChatMessageSellerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:26:53 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test answerChatMessageSellerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: answerChatMessageBuyerAR</p>
+            <p class="text-sm">
+              <span>3:26:53 PM</span> / <span>00:00:17:878</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: answerChatMessageBuyerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:26:53 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:27:11 PM</span>
+<span class='badge badge-default'>00:00:17:878</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:26:53 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> answerChatMessageBuyerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:27:11 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test answerChatMessageBuyerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: readLastChatMessageSellerAR</p>
+            <p class="text-sm">
+              <span>3:27:11 PM</span> / <span>00:00:16:049</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: readLastChatMessageSellerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:27:11 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:27:27 PM</span>
+<span class='badge badge-default'>00:00:16:049</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:27:11 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> readLastChatMessageSellerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:27:27 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test readLastChatMessageSellerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: hideChatMessageSellerAR</p>
+            <p class="text-sm">
+              <span>3:27:27 PM</span> / <span>00:00:16:744</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: hideChatMessageSellerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:27:27 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:27:44 PM</span>
+<span class='badge badge-default'>00:00:16:744</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:27:27 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> hideChatMessageSellerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:27:44 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test hideChatMessageSellerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: unhideChatMessageBuyerAR</p>
+            <p class="text-sm">
+              <span>3:27:44 PM</span> / <span>00:00:13:431</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: unhideChatMessageBuyerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:27:44 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:27:57 PM</span>
+<span class='badge badge-default'>00:00:13:431</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:27:44 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> unhideChatMessageBuyerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:27:57 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test unhideChatMessageBuyerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: checkUnhideChatMessageSellerAR</p>
+            <p class="text-sm">
+              <span>3:27:57 PM</span> / <span>00:00:12:816</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: checkUnhideChatMessageSellerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:27:57 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:28:10 PM</span>
+<span class='badge badge-default'>00:00:12:816</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:27:57 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> checkUnhideChatMessageSellerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:28:10 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkUnhideChatMessageSellerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: blockChatMessageSellerAR</p>
+            <p class="text-sm">
+              <span>3:28:10 PM</span> / <span>00:00:13:048</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: blockChatMessageSellerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:28:10 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:28:23 PM</span>
+<span class='badge badge-default'>00:00:13:048</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:10 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> blockChatMessageSellerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:28:23 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test blockChatMessageSellerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: checkBlockChatMessageBuyerAR</p>
+            <p class="text-sm">
+              <span>3:28:23 PM</span> / <span>00:00:09:702</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: checkBlockChatMessageBuyerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:28:23 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:28:33 PM</span>
+<span class='badge badge-default'>00:00:09:702</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:23 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> checkBlockChatMessageBuyerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:28:33 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkBlockChatMessageBuyerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: unBlockChatMessageInDBCheckBuyerAR</p>
+            <p class="text-sm">
+              <span>3:28:33 PM</span> / <span>00:00:29:869</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: unBlockChatMessageInDBCheckBuyerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:28:33 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:29:03 PM</span>
+<span class='badge badge-default'>00:00:29:869</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:28:33 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> unBlockChatMessageInDBCheckBuyerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:29:03 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test unBlockChatMessageInDBCheckBuyerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: notBlockingByEightSameMessagesCheckSellerAR</p>
+            <p class="text-sm">
+              <span>3:29:03 PM</span> / <span>00:00:38:266</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: notBlockingByEightSameMessagesCheckSellerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:29:03 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:29:41 PM</span>
+<span class='badge badge-default'>00:00:38:266</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:29:03 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> notBlockingByEightSameMessagesCheckSellerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:29:41 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test notBlockingByEightSameMessagesCheckSellerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: messagesWasSendCheckBuyerAR</p>
+            <p class="text-sm">
+              <span>3:29:41 PM</span> / <span>00:00:12:212</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: messagesWasSendCheckBuyerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:29:41 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:29:53 PM</span>
+<span class='badge badge-default'>00:00:12:212</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:29:41 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> messagesWasSendCheckBuyerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:29:53 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test messagesWasSendCheckBuyerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: blockingByEightSameMessagesLikeBuyerCheckSellerAR</p>
+            <p class="text-sm">
+              <span>3:29:53 PM</span> / <span>00:00:38:189</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: blockingByEightSameMessagesLikeBuyerCheckSellerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:29:53 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:30:31 PM</span>
+<span class='badge badge-default'>00:00:38:189</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:29:53 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> blockingByEightSameMessagesLikeBuyerCheckSellerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:30:31 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test blockingByEightSameMessagesLikeBuyerCheckSellerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: userWasBlockedCheckSellerAR</p>
+            <p class="text-sm">
+              <span>3:30:31 PM</span> / <span>00:00:15:970</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: userWasBlockedCheckSellerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:30:31 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:30:47 PM</span>
+<span class='badge badge-default'>00:00:15:970</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:30:31 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> userWasBlockedCheckSellerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:30:47 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test userWasBlockedCheckSellerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: lastChanceUnblockFraudCheckSellerAR</p>
+            <p class="text-sm">
+              <span>3:30:47 PM</span> / <span>00:00:21:114</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: lastChanceUnblockFraudCheckSellerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:30:47 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:31:09 PM</span>
+<span class='badge badge-default'>00:00:21:114</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:30:47 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> lastChanceUnblockFraudCheckSellerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:31:09 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test lastChanceUnblockFraudCheckSellerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: blockChatBuyerAR</p>
+            <p class="text-sm">
+              <span>3:31:09 PM</span> / <span>00:00:10:398</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: blockChatBuyerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:31:09 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:31:19 PM</span>
+<span class='badge badge-default'>00:00:10:398</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:31:09 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> blockChatBuyerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:31:19 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test blockChatBuyerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: checkBlockChatMessageSellerAR</p>
+            <p class="text-sm">
+              <span>3:31:19 PM</span> / <span>00:00:11:271</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: checkBlockChatMessageSellerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:31:19 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:31:30 PM</span>
+<span class='badge badge-default'>00:00:11:271</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:31:19 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> checkBlockChatMessageSellerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:31:30 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkBlockChatMessageSellerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: unBlockChatMessageBuyerAR</p>
+            <p class="text-sm">
+              <span>3:31:30 PM</span> / <span>00:00:13:480</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: unBlockChatMessageBuyerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:31:30 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:31:44 PM</span>
+<span class='badge badge-default'>00:00:13:480</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:31:30 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> unBlockChatMessageBuyerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:31:44 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test unBlockChatMessageBuyerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsBuyerTest: readMessageAfterUnblockingSellerAR</p>
+            <p class="text-sm">
+              <span>3:31:44 PM</span> / <span>00:00:10:378</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsBuyerTest: readMessageAfterUnblockingSellerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:31:44 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:31:54 PM</span>
+<span class='badge badge-default'>00:00:10:378</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:31:44 PM</td>
+        <td>
+          Test desktop.StartChatAsBuyerTest -> readMessageAfterUnblockingSellerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:31:54 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test readMessageAfterUnblockingSellerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.BlockChatTest: blockChatAsSeller</p>
+            <p class="text-sm">
+              <span>3:31:54 PM</span> / <span>00:00:53:506</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.BlockChatTest: blockChatAsSeller</h5>
+<span class='badge badge-success'>03.28.2023 3:31:54 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:32:48 PM</span>
+<span class='badge badge-default'>00:00:53:506</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:31:54 PM</td>
+        <td>
+          Test desktop.BlockChatTest -> blockChatAsSeller successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:32:48 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test blockChatAsSeller passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsSellerTest: startChatSellerAR</p>
+            <p class="text-sm">
+              <span>3:32:48 PM</span> / <span>00:00:11:641</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsSellerTest: startChatSellerAR</h5>
+<span class='badge badge-success'>03.28.2023 3:32:48 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:33:00 PM</span>
+<span class='badge badge-default'>00:00:11:641</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:32:48 PM</td>
+        <td>
+          Test desktop.StartChatAsSellerTest -> startChatSellerAR successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:33:00 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test startChatSellerAR passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">desktop.StartChatAsSellerTest: startChatSellerSK</p>
+            <p class="text-sm">
+              <span>3:33:00 PM</span> / <span>00:00:10:469</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">desktop.StartChatAsSellerTest: startChatSellerSK</h5>
+<span class='badge badge-success'>03.28.2023 3:33:00 PM</span>
+<span class='badge badge-danger'>03.28.2023 3:33:10 PM</span>
+<span class='badge badge-default'>00:00:10:469</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:00 PM</td>
+        <td>
+          Test desktop.StartChatAsSellerTest -> startChatSellerSK successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:33:10 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test startChatSellerSK passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="spark/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
