@@ -1,0 +1,3918 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Erp Web Selenium Automation</title>
+<link rel="apple-touch-icon" href="spark/logo.png">
+<link rel="shortcut icon" href="spark/logo.png">
+<link rel="stylesheet" href="spark/spark-style.css">
+<link rel="stylesheet" href="spark/font-awesome.min.css">
+<script src="spark/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('spark/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Erp Web version report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">2023-03-31 13:14:52</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>2023-03-31 13:14:52</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>2023-03-31 13:31:35</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>77</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='98%'>
+<b>77</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='1%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='48%'><b>77</b> events passed</small></div>
+<div>
+<small data-tooltip='1%'><b>3</b> events failed,
+<b data-tooltip='%'>78</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"FindErrorTest: checkBankDataSettingsPageUrls":16.329,"NoticeTest: createNoteAndDeleteNote":10.998,"financialTest.InvoiceTest: copyInvoice":18.732,"financialTest.PreliminaryInvoiceTest: checkClientAutocompleateTags":17.916,"FindErrorTest: checkClientPageUrls":29.072,"financialTest.InvoiceTest: createInvoiceAdditionalFourRows":70.625,"financialTest.PreliminaryInvoiceTest: copyPreliminaryInvoice":22.017,"FindErrorTest: checkCompanySettingsPageUrls":13.579,"financialTest.PreliminaryInvoiceTest: createInvoiceFromPreliminaryInvoiceData":28.587,"FindErrorTest: checkCronPageSettingsPageUrls":12.762,"FindErrorTest: checkDocumentPageUrls":90.262,"financialTest.PreliminaryInvoiceTest: createPreliminaryInvoiceOneRowAutoPriceAndDelete":22.635,"financialTest.InvoiceTest: createInvoiceOneRowAutoPrice":14.255,"OrderTest: copyOneTimeOrderAndDelete":28.949,"financialTest.InvoiceTest: createInvoiceOneRowManualDiscount":15.265,"OrderTest: createMonthlyOrderAndDeleteOrderInvoiceFirstDay":30.56,"financialTest.InvoiceTest: createInvoiceOneRowManualDiscountDesired":13.995,"FindErrorTest: checkEventCalendarFirstRowPageUrls":12.453,"financialTest.InvoiceTest: createInvoiceOneRowManualPrice":14.048,"OrderTest: createMonthlyOrderAndDeleteOrderInvoiceSameDayAndStopOrder":34.145,"FindErrorTest: checkEventCalendarPageUrls":14.379,"financialTest.InvoiceTest: createInvoiceOneRowManualPriceDesired":15.317,"FindErrorTest: checkEventFilterPageUrls":10.634,"OrderTest: createOneTimeOrderAndDeleteOrder":31.584,"FindErrorTest: checkEventFirstRowPageUrls":11.402,"financialTest.InvoiceTest: createInvoiceOneRowManualPriceDesiredDiscount":14.805,"FindErrorTest: checkHomePageUrls":13.969,"financialTest.InvoiceTest: createInvoiceOneRowManualPriceDesiredQuantity":13.182,"FindErrorTest: checkInvoicePageUrls":48.364,"EmailTest: addToFolderAndCheckStar":12.019,"financialTest.InvoiceTest: createInvoiceOneRowManualQuantity":14.889,"EmailTest: createMail":13.359,"financialTest.InvoiceTest: createInvoiceOneRowManualQuantityAndDiscount":14.763,"FindErrorTest: checkLoginHistoryPageUrls":15.18,"financialTest.InvoiceTest: createInvoiceOneRowManualQuantitySecond":13.256,"FindErrorTest: checkLoginPageUrls":1.337,"FindErrorTest: checkMailPageUrls":21.707,"EmailTest: forwardSendedMailToWorkerAndReplyAndDelete":55.737,"financialTest.InvoiceTest: createInvoiceThreeRowsManual":28.776,"FindErrorTest: checkManagerPageUrls":33.733,"EventTest: createEventForOtherPerformerAndEditEventAndDelete":25.857,"FindErrorTest: checkNotesPageUrls":12.38,"EmailTest: sendInvoiceMail":23.625,"EventTest: createMultipleEvent":34.389,"FindErrorTest: checkOpenedClientPageUrls":25.946,"FindErrorTest: checkOpenedDocumentPageUrls":79.898,"EventTest: createOneTimeEventAndDelete":22.456,"DocumentTest: documentCreationAndEditing":22.444,"DocumentTest: documentOrderCreationAndEditing":29.992,"FindErrorTest: checkOpenedInvoicePageUrls":46.586,"DocumentTest: fileCreationAndEditing":14.839,"financialTest.CreditInvoiceTest: createNewInvoice":10.458,"FindErrorTest: checkOpenedNotePageUrls":15.139,"financialTest.CreditInvoiceTest: createEditCreditInvoice":16.228,"FindErrorTest: checkOpenedOrderPageUrls":12.28,"financialTest.PaymentTest: createEditDeletePayment":63.025,"FindErrorTest: checkOpenedPreInvoicePageUrls":129.801,"ClientTest: addNewManager":12.238,"ClientTest: clientContactLink":18.673,"ClientTest: clientEditTest":30.22,"FindErrorTest: checkOpenedServicesGroupPageUrls":11.123,"FindErrorTest: checkOpenedServicesPageUrls":9.427,"FindErrorTest: checkOrderCalendarPageUrls":13.698,"ClientTest: createClientFirstCombination":27.836,"FindErrorTest: checkOrderPageUrls":39.527,"ClientTest: createClientSecondCombinationAndEdit":40.693,"FindErrorTest: checkPreInvoicePageUrls":125.372,"ClientTest: createEditDeleteContact":14.803,"ClientTest: documentLink":10.812,"ClientTest: financeLink":9.334,"ClientTest: managerLink":7.23,"ClientTest: orderLink":9.185,"FindErrorTest: checkReportsActivitePageUrls":12.744,"FindErrorTest: checkReportsPaymentPageUrls":15.087,"FindErrorTest: checkReportsSellPageUrls":47.107,"FindErrorTest: checkServicesGroupPageUrls":10.526,"FindErrorTest: checkServicesPageUrls":10.405,"FindErrorTest: checkUserGroupPageUrls":17.579
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Company</td>
+<td>Diginet LTU</td>
+</tr>
+<tr>
+<td>ERP WWW Automation</td>
+<td>Selenium WebDriver</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 77,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 77,
+failEvents: 3,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 78
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkBankDataSettingsPageUrls</p>
+            <p class="text-sm">
+              <span>1:15:15 PM</span> / <span>00:00:16:329</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkBankDataSettingsPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:15:15 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:15:31 PM</span>
+<span class='badge badge-default'>00:00:16:329</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:15:15 PM</td>
+        <td>
+          Test FindErrorTest -> checkBankDataSettingsPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:15:31 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkBankDataSettingsPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">NoticeTest: createNoteAndDeleteNote</p>
+            <p class="text-sm">
+              <span>1:15:15 PM</span> / <span>00:00:10:998</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">NoticeTest: createNoteAndDeleteNote</h5>
+<span class='badge badge-success'>03.31.2023 1:15:15 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:15:26 PM</span>
+<span class='badge badge-default'>00:00:10:998</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:15:15 PM</td>
+        <td>
+          Test NoticeTest -> createNoteAndDeleteNote successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:15:26 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createNoteAndDeleteNote passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.InvoiceTest: copyInvoice</p>
+            <p class="text-sm">
+              <span>1:15:20 PM</span> / <span>00:00:18:732</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.InvoiceTest: copyInvoice</h5>
+<span class='badge badge-success'>03.31.2023 1:15:20 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:15:39 PM</span>
+<span class='badge badge-default'>00:00:18:732</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:15:20 PM</td>
+        <td>
+          Test financialTest.InvoiceTest -> copyInvoice successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:15:39 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test copyInvoice passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.PreliminaryInvoiceTest: checkClientAutocompleateTags</p>
+            <p class="text-sm">
+              <span>1:15:27 PM</span> / <span>00:00:17:916</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.PreliminaryInvoiceTest: checkClientAutocompleateTags</h5>
+<span class='badge badge-success'>03.31.2023 1:15:27 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:15:45 PM</span>
+<span class='badge badge-default'>00:00:17:916</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:15:27 PM</td>
+        <td>
+          Test financialTest.PreliminaryInvoiceTest -> checkClientAutocompleateTags successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:15:45 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkClientAutocompleateTags passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkClientPageUrls</p>
+            <p class="text-sm">
+              <span>1:15:31 PM</span> / <span>00:00:29:072</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkClientPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:15:31 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:16:00 PM</span>
+<span class='badge badge-default'>00:00:29:072</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:15:31 PM</td>
+        <td>
+          Test FindErrorTest -> checkClientPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:16:00 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkClientPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.InvoiceTest: createInvoiceAdditionalFourRows</p>
+            <p class="text-sm">
+              <span>1:15:43 PM</span> / <span>00:01:10:625</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.InvoiceTest: createInvoiceAdditionalFourRows</h5>
+<span class='badge badge-success'>03.31.2023 1:15:43 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:16:54 PM</span>
+<span class='badge badge-default'>00:01:10:625</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:15:43 PM</td>
+        <td>
+          Test financialTest.InvoiceTest -> createInvoiceAdditionalFourRows successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:16:54 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createInvoiceAdditionalFourRows passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.PreliminaryInvoiceTest: copyPreliminaryInvoice</p>
+            <p class="text-sm">
+              <span>1:15:45 PM</span> / <span>00:00:22:017</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.PreliminaryInvoiceTest: copyPreliminaryInvoice</h5>
+<span class='badge badge-success'>03.31.2023 1:15:45 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:16:07 PM</span>
+<span class='badge badge-default'>00:00:22:017</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:15:45 PM</td>
+        <td>
+          Test financialTest.PreliminaryInvoiceTest -> copyPreliminaryInvoice successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:16:07 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test copyPreliminaryInvoice passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkCompanySettingsPageUrls</p>
+            <p class="text-sm">
+              <span>1:16:00 PM</span> / <span>00:00:13:579</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkCompanySettingsPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:16:00 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:16:14 PM</span>
+<span class='badge badge-default'>00:00:13:579</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:16:00 PM</td>
+        <td>
+          Test FindErrorTest -> checkCompanySettingsPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:16:14 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkCompanySettingsPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.PreliminaryInvoiceTest: createInvoiceFromPreliminaryInvoiceData</p>
+            <p class="text-sm">
+              <span>1:16:07 PM</span> / <span>00:00:28:587</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.PreliminaryInvoiceTest: createInvoiceFromPreliminaryInvoiceData</h5>
+<span class='badge badge-success'>03.31.2023 1:16:07 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:16:35 PM</span>
+<span class='badge badge-default'>00:00:28:587</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:16:07 PM</td>
+        <td>
+          Test financialTest.PreliminaryInvoiceTest -> createInvoiceFromPreliminaryInvoiceData successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:16:35 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createInvoiceFromPreliminaryInvoiceData passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkCronPageSettingsPageUrls</p>
+            <p class="text-sm">
+              <span>1:16:14 PM</span> / <span>00:00:12:762</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkCronPageSettingsPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:16:14 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:16:26 PM</span>
+<span class='badge badge-default'>00:00:12:762</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:16:14 PM</td>
+        <td>
+          Test FindErrorTest -> checkCronPageSettingsPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:16:26 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkCronPageSettingsPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkDocumentPageUrls</p>
+            <p class="text-sm">
+              <span>1:16:26 PM</span> / <span>00:01:30:262</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkDocumentPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:16:26 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:17:57 PM</span>
+<span class='badge badge-default'>00:01:30:262</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:16:26 PM</td>
+        <td>
+          Test FindErrorTest -> checkDocumentPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:17:57 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkDocumentPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.PreliminaryInvoiceTest: createPreliminaryInvoiceOneRowAutoPriceAndDelete</p>
+            <p class="text-sm">
+              <span>1:16:35 PM</span> / <span>00:00:22:635</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.PreliminaryInvoiceTest: createPreliminaryInvoiceOneRowAutoPriceAndDelete</h5>
+<span class='badge badge-success'>03.31.2023 1:16:35 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:16:58 PM</span>
+<span class='badge badge-default'>00:00:22:635</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:16:35 PM</td>
+        <td>
+          Test financialTest.PreliminaryInvoiceTest -> createPreliminaryInvoiceOneRowAutoPriceAndDelete successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:16:58 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createPreliminaryInvoiceOneRowAutoPriceAndDelete passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.InvoiceTest: createInvoiceOneRowAutoPrice</p>
+            <p class="text-sm">
+              <span>1:16:58 PM</span> / <span>00:00:14:255</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.InvoiceTest: createInvoiceOneRowAutoPrice</h5>
+<span class='badge badge-success'>03.31.2023 1:16:58 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:17:13 PM</span>
+<span class='badge badge-default'>00:00:14:255</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:16:58 PM</td>
+        <td>
+          Test financialTest.InvoiceTest -> createInvoiceOneRowAutoPrice successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:17:13 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createInvoiceOneRowAutoPrice passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">OrderTest: copyOneTimeOrderAndDelete</p>
+            <p class="text-sm">
+              <span>1:16:59 PM</span> / <span>00:00:28:949</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">OrderTest: copyOneTimeOrderAndDelete</h5>
+<span class='badge badge-success'>03.31.2023 1:16:59 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:17:28 PM</span>
+<span class='badge badge-default'>00:00:28:949</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:16:59 PM</td>
+        <td>
+          Test OrderTest -> copyOneTimeOrderAndDelete successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:17:28 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test copyOneTimeOrderAndDelete passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.InvoiceTest: createInvoiceOneRowManualDiscount</p>
+            <p class="text-sm">
+              <span>1:17:18 PM</span> / <span>00:00:15:265</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.InvoiceTest: createInvoiceOneRowManualDiscount</h5>
+<span class='badge badge-success'>03.31.2023 1:17:18 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:17:33 PM</span>
+<span class='badge badge-default'>00:00:15:265</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:17:18 PM</td>
+        <td>
+          Test financialTest.InvoiceTest -> createInvoiceOneRowManualDiscount successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:17:33 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createInvoiceOneRowManualDiscount passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">OrderTest: createMonthlyOrderAndDeleteOrderInvoiceFirstDay</p>
+            <p class="text-sm">
+              <span>1:17:28 PM</span> / <span>00:00:30:560</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">OrderTest: createMonthlyOrderAndDeleteOrderInvoiceFirstDay</h5>
+<span class='badge badge-success'>03.31.2023 1:17:28 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:17:58 PM</span>
+<span class='badge badge-default'>00:00:30:560</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:17:28 PM</td>
+        <td>
+          Test OrderTest -> createMonthlyOrderAndDeleteOrderInvoiceFirstDay successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:17:58 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createMonthlyOrderAndDeleteOrderInvoiceFirstDay passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.InvoiceTest: createInvoiceOneRowManualDiscountDesired</p>
+            <p class="text-sm">
+              <span>1:17:38 PM</span> / <span>00:00:13:995</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.InvoiceTest: createInvoiceOneRowManualDiscountDesired</h5>
+<span class='badge badge-success'>03.31.2023 1:17:38 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:17:52 PM</span>
+<span class='badge badge-default'>00:00:13:995</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:17:38 PM</td>
+        <td>
+          Test financialTest.InvoiceTest -> createInvoiceOneRowManualDiscountDesired successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:17:52 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createInvoiceOneRowManualDiscountDesired passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkEventCalendarFirstRowPageUrls</p>
+            <p class="text-sm">
+              <span>1:17:57 PM</span> / <span>00:00:12:453</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkEventCalendarFirstRowPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:17:57 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:18:09 PM</span>
+<span class='badge badge-default'>00:00:12:453</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:17:57 PM</td>
+        <td>
+          Test FindErrorTest -> checkEventCalendarFirstRowPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:18:09 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkEventCalendarFirstRowPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.InvoiceTest: createInvoiceOneRowManualPrice</p>
+            <p class="text-sm">
+              <span>1:17:57 PM</span> / <span>00:00:14:048</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.InvoiceTest: createInvoiceOneRowManualPrice</h5>
+<span class='badge badge-success'>03.31.2023 1:17:57 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:18:11 PM</span>
+<span class='badge badge-default'>00:00:14:048</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:17:57 PM</td>
+        <td>
+          Test financialTest.InvoiceTest -> createInvoiceOneRowManualPrice successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:18:11 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createInvoiceOneRowManualPrice passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">OrderTest: createMonthlyOrderAndDeleteOrderInvoiceSameDayAndStopOrder</p>
+            <p class="text-sm">
+              <span>1:17:58 PM</span> / <span>00:00:34:145</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">OrderTest: createMonthlyOrderAndDeleteOrderInvoiceSameDayAndStopOrder</h5>
+<span class='badge badge-success'>03.31.2023 1:17:58 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:18:32 PM</span>
+<span class='badge badge-default'>00:00:34:145</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:17:58 PM</td>
+        <td>
+          Test OrderTest -> createMonthlyOrderAndDeleteOrderInvoiceSameDayAndStopOrder successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:18:32 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createMonthlyOrderAndDeleteOrderInvoiceSameDayAndStopOrder passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkEventCalendarPageUrls</p>
+            <p class="text-sm">
+              <span>1:18:09 PM</span> / <span>00:00:14:379</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkEventCalendarPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:18:09 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:18:24 PM</span>
+<span class='badge badge-default'>00:00:14:379</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:09 PM</td>
+        <td>
+          Test FindErrorTest -> checkEventCalendarPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:18:24 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkEventCalendarPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.InvoiceTest: createInvoiceOneRowManualPriceDesired</p>
+            <p class="text-sm">
+              <span>1:18:15 PM</span> / <span>00:00:15:317</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.InvoiceTest: createInvoiceOneRowManualPriceDesired</h5>
+<span class='badge badge-success'>03.31.2023 1:18:15 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:18:30 PM</span>
+<span class='badge badge-default'>00:00:15:317</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:15 PM</td>
+        <td>
+          Test financialTest.InvoiceTest -> createInvoiceOneRowManualPriceDesired successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:18:30 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createInvoiceOneRowManualPriceDesired passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkEventFilterPageUrls</p>
+            <p class="text-sm">
+              <span>1:18:24 PM</span> / <span>00:00:10:634</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkEventFilterPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:18:24 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:18:34 PM</span>
+<span class='badge badge-default'>00:00:10:634</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:24 PM</td>
+        <td>
+          Test FindErrorTest -> checkEventFilterPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:18:34 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkEventFilterPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">OrderTest: createOneTimeOrderAndDeleteOrder</p>
+            <p class="text-sm">
+              <span>1:18:32 PM</span> / <span>00:00:31:584</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">OrderTest: createOneTimeOrderAndDeleteOrder</h5>
+<span class='badge badge-success'>03.31.2023 1:18:32 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:19:04 PM</span>
+<span class='badge badge-default'>00:00:31:584</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:32 PM</td>
+        <td>
+          Test OrderTest -> createOneTimeOrderAndDeleteOrder successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:19:04 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createOneTimeOrderAndDeleteOrder passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkEventFirstRowPageUrls</p>
+            <p class="text-sm">
+              <span>1:18:34 PM</span> / <span>00:00:11:402</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkEventFirstRowPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:18:34 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:18:46 PM</span>
+<span class='badge badge-default'>00:00:11:402</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:34 PM</td>
+        <td>
+          Test FindErrorTest -> checkEventFirstRowPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:18:46 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkEventFirstRowPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.InvoiceTest: createInvoiceOneRowManualPriceDesiredDiscount</p>
+            <p class="text-sm">
+              <span>1:18:35 PM</span> / <span>00:00:14:805</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.InvoiceTest: createInvoiceOneRowManualPriceDesiredDiscount</h5>
+<span class='badge badge-success'>03.31.2023 1:18:35 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:18:49 PM</span>
+<span class='badge badge-default'>00:00:14:805</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:35 PM</td>
+        <td>
+          Test financialTest.InvoiceTest -> createInvoiceOneRowManualPriceDesiredDiscount successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:18:49 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createInvoiceOneRowManualPriceDesiredDiscount passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkHomePageUrls</p>
+            <p class="text-sm">
+              <span>1:18:46 PM</span> / <span>00:00:13:969</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkHomePageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:18:46 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:19:00 PM</span>
+<span class='badge badge-default'>00:00:13:969</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:46 PM</td>
+        <td>
+          Test FindErrorTest -> checkHomePageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:19:00 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkHomePageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.InvoiceTest: createInvoiceOneRowManualPriceDesiredQuantity</p>
+            <p class="text-sm">
+              <span>1:18:55 PM</span> / <span>00:00:13:182</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.InvoiceTest: createInvoiceOneRowManualPriceDesiredQuantity</h5>
+<span class='badge badge-success'>03.31.2023 1:18:55 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:19:08 PM</span>
+<span class='badge badge-default'>00:00:13:182</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:18:55 PM</td>
+        <td>
+          Test financialTest.InvoiceTest -> createInvoiceOneRowManualPriceDesiredQuantity successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:19:08 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createInvoiceOneRowManualPriceDesiredQuantity passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkInvoicePageUrls</p>
+            <p class="text-sm">
+              <span>1:19:00 PM</span> / <span>00:00:48:364</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkInvoicePageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:19:00 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:19:48 PM</span>
+<span class='badge badge-default'>00:00:48:364</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:19:00 PM</td>
+        <td>
+          Test FindErrorTest -> checkInvoicePageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:19:48 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkInvoicePageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">EmailTest: addToFolderAndCheckStar</p>
+            <p class="text-sm">
+              <span>1:19:05 PM</span> / <span>00:00:12:019</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EmailTest: addToFolderAndCheckStar</h5>
+<span class='badge badge-success'>03.31.2023 1:19:05 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:19:17 PM</span>
+<span class='badge badge-default'>00:00:12:019</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:19:05 PM</td>
+        <td>
+          Test EmailTest -> addToFolderAndCheckStar successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:19:17 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test addToFolderAndCheckStar passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.InvoiceTest: createInvoiceOneRowManualQuantity</p>
+            <p class="text-sm">
+              <span>1:19:15 PM</span> / <span>00:00:14:889</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.InvoiceTest: createInvoiceOneRowManualQuantity</h5>
+<span class='badge badge-success'>03.31.2023 1:19:15 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:19:30 PM</span>
+<span class='badge badge-default'>00:00:14:889</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:19:15 PM</td>
+        <td>
+          Test financialTest.InvoiceTest -> createInvoiceOneRowManualQuantity successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:19:30 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createInvoiceOneRowManualQuantity passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">EmailTest: createMail</p>
+            <p class="text-sm">
+              <span>1:19:17 PM</span> / <span>00:00:13:359</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EmailTest: createMail</h5>
+<span class='badge badge-success'>03.31.2023 1:19:17 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:19:30 PM</span>
+<span class='badge badge-default'>00:00:13:359</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:19:17 PM</td>
+        <td>
+          Test EmailTest -> createMail successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:19:30 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createMail passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.InvoiceTest: createInvoiceOneRowManualQuantityAndDiscount</p>
+            <p class="text-sm">
+              <span>1:19:35 PM</span> / <span>00:00:14:763</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.InvoiceTest: createInvoiceOneRowManualQuantityAndDiscount</h5>
+<span class='badge badge-success'>03.31.2023 1:19:35 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:19:50 PM</span>
+<span class='badge badge-default'>00:00:14:763</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:19:35 PM</td>
+        <td>
+          Test financialTest.InvoiceTest -> createInvoiceOneRowManualQuantityAndDiscount successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:19:50 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createInvoiceOneRowManualQuantityAndDiscount passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkLoginHistoryPageUrls</p>
+            <p class="text-sm">
+              <span>1:19:48 PM</span> / <span>00:00:15:180</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkLoginHistoryPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:19:48 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:20:03 PM</span>
+<span class='badge badge-default'>00:00:15:180</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:19:48 PM</td>
+        <td>
+          Test FindErrorTest -> checkLoginHistoryPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:20:03 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkLoginHistoryPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="36"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.InvoiceTest: createInvoiceOneRowManualQuantitySecond</p>
+            <p class="text-sm">
+              <span>1:19:53 PM</span> / <span>00:00:13:256</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.InvoiceTest: createInvoiceOneRowManualQuantitySecond</h5>
+<span class='badge badge-success'>03.31.2023 1:19:53 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:20:07 PM</span>
+<span class='badge badge-default'>00:00:13:256</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:19:53 PM</td>
+        <td>
+          Test financialTest.InvoiceTest -> createInvoiceOneRowManualQuantitySecond successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:20:07 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createInvoiceOneRowManualQuantitySecond passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="37"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkLoginPageUrls</p>
+            <p class="text-sm">
+              <span>1:20:03 PM</span> / <span>00:00:01:337</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkLoginPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:20:03 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:20:05 PM</span>
+<span class='badge badge-default'>00:00:01:337</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:20:03 PM</td>
+        <td>
+          Test FindErrorTest -> checkLoginPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:20:05 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkLoginPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="38"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkMailPageUrls</p>
+            <p class="text-sm">
+              <span>1:20:05 PM</span> / <span>00:00:21:707</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkMailPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:20:05 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:20:26 PM</span>
+<span class='badge badge-default'>00:00:21:707</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:20:05 PM</td>
+        <td>
+          Test FindErrorTest -> checkMailPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:20:26 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkMailPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="39"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">EmailTest: forwardSendedMailToWorkerAndReplyAndDelete</p>
+            <p class="text-sm">
+              <span>1:20:05 PM</span> / <span>00:00:55:737</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EmailTest: forwardSendedMailToWorkerAndReplyAndDelete</h5>
+<span class='badge badge-success'>03.31.2023 1:20:05 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:21:01 PM</span>
+<span class='badge badge-default'>00:00:55:737</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=39</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:20:05 PM</td>
+        <td>
+          Test EmailTest -> forwardSendedMailToWorkerAndReplyAndDelete successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:21:01 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test forwardSendedMailToWorkerAndReplyAndDelete passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="40"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.InvoiceTest: createInvoiceThreeRowsManual</p>
+            <p class="text-sm">
+              <span>1:20:11 PM</span> / <span>00:00:28:776</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.InvoiceTest: createInvoiceThreeRowsManual</h5>
+<span class='badge badge-success'>03.31.2023 1:20:11 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:20:39 PM</span>
+<span class='badge badge-default'>00:00:28:776</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=40</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:20:11 PM</td>
+        <td>
+          Test financialTest.InvoiceTest -> createInvoiceThreeRowsManual successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:20:39 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createInvoiceThreeRowsManual passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="41"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkManagerPageUrls</p>
+            <p class="text-sm">
+              <span>1:20:26 PM</span> / <span>00:00:33:733</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkManagerPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:20:26 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:21:00 PM</span>
+<span class='badge badge-default'>00:00:33:733</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=41</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:20:26 PM</td>
+        <td>
+          Test FindErrorTest -> checkManagerPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:21:00 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkManagerPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="42"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">EventTest: createEventForOtherPerformerAndEditEventAndDelete</p>
+            <p class="text-sm">
+              <span>1:20:40 PM</span> / <span>00:00:25:857</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventTest: createEventForOtherPerformerAndEditEventAndDelete</h5>
+<span class='badge badge-success'>03.31.2023 1:20:40 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:21:06 PM</span>
+<span class='badge badge-default'>00:00:25:857</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=42</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:20:40 PM</td>
+        <td>
+          Test EventTest -> createEventForOtherPerformerAndEditEventAndDelete successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:21:06 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createEventForOtherPerformerAndEditEventAndDelete passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="43"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkNotesPageUrls</p>
+            <p class="text-sm">
+              <span>1:21:00 PM</span> / <span>00:00:12:380</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkNotesPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:21:00 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:21:12 PM</span>
+<span class='badge badge-default'>00:00:12:380</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=43</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:21:00 PM</td>
+        <td>
+          Test FindErrorTest -> checkNotesPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:21:12 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkNotesPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="44"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">EmailTest: sendInvoiceMail</p>
+            <p class="text-sm">
+              <span>1:21:01 PM</span> / <span>00:00:23:625</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EmailTest: sendInvoiceMail</h5>
+<span class='badge badge-success'>03.31.2023 1:21:01 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:21:24 PM</span>
+<span class='badge badge-default'>00:00:23:625</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=44</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:21:01 PM</td>
+        <td>
+          Test EmailTest -> sendInvoiceMail successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:21:24 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test sendInvoiceMail passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="45"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">EventTest: createMultipleEvent</p>
+            <p class="text-sm">
+              <span>1:21:06 PM</span> / <span>00:00:34:389</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventTest: createMultipleEvent</h5>
+<span class='badge badge-success'>03.31.2023 1:21:06 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:21:40 PM</span>
+<span class='badge badge-default'>00:00:34:389</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=45</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:21:06 PM</td>
+        <td>
+          Test EventTest -> createMultipleEvent successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:21:40 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createMultipleEvent passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="46"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkOpenedClientPageUrls</p>
+            <p class="text-sm">
+              <span>1:21:12 PM</span> / <span>00:00:25:946</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkOpenedClientPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:21:12 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:21:38 PM</span>
+<span class='badge badge-default'>00:00:25:946</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=46</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:21:12 PM</td>
+        <td>
+          Test FindErrorTest -> checkOpenedClientPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:21:38 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkOpenedClientPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="47"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkOpenedDocumentPageUrls</p>
+            <p class="text-sm">
+              <span>1:21:38 PM</span> / <span>00:01:19:898</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkOpenedDocumentPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:21:38 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:22:58 PM</span>
+<span class='badge badge-default'>00:01:19:898</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=47</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:21:38 PM</td>
+        <td>
+          Test FindErrorTest -> checkOpenedDocumentPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:22:58 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkOpenedDocumentPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="48"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">EventTest: createOneTimeEventAndDelete</p>
+            <p class="text-sm">
+              <span>1:21:40 PM</span> / <span>00:00:22:456</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EventTest: createOneTimeEventAndDelete</h5>
+<span class='badge badge-success'>03.31.2023 1:21:40 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:22:03 PM</span>
+<span class='badge badge-default'>00:00:22:456</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=48</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:21:40 PM</td>
+        <td>
+          Test EventTest -> createOneTimeEventAndDelete successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:22:03 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createOneTimeEventAndDelete passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="49"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">DocumentTest: documentCreationAndEditing</p>
+            <p class="text-sm">
+              <span>1:22:04 PM</span> / <span>00:00:22:444</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">DocumentTest: documentCreationAndEditing</h5>
+<span class='badge badge-success'>03.31.2023 1:22:04 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:22:26 PM</span>
+<span class='badge badge-default'>00:00:22:444</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=49</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:22:04 PM</td>
+        <td>
+          Test DocumentTest -> documentCreationAndEditing successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:22:26 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test documentCreationAndEditing passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="51"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">DocumentTest: documentOrderCreationAndEditing</p>
+            <p class="text-sm">
+              <span>1:22:50 PM</span> / <span>00:00:29:992</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">DocumentTest: documentOrderCreationAndEditing</h5>
+<span class='badge badge-success'>03.31.2023 1:22:50 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:23:20 PM</span>
+<span class='badge badge-default'>00:00:29:992</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=51</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:22:50 PM</td>
+        <td>
+          Test DocumentTest -> documentOrderCreationAndEditing successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:23:20 PM</td>
+        <td>
+          <span class='badge white-text red'><b>Test Method documentOrderCreationAndEditing Failed</b></span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:23:20 PM</td>
+        <td>
+          <b><font color=red>Screenshot of failure</font></b>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='documentOrderCreationAndEditing_chrome_2023-03-31.png' src="documentOrderCreationAndEditing_chrome_2023-03-31.png">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:23:20 PM</td>
+        <td>
+          <details><summary><b><font color=red>Error occured: click to see the details -> </font></b></summary>element click intercepted: Element <input type="checkbox" class="custom-control-input" name="signed" id="signed" value="1"> is not clickable at point (233, 1030). Other element would receive the click: <div class="block-with-sticky bottom-sticky" id="drop_zone" data-file_field_id="uploaded_files">...</div>
+  (Session info: headless chrome=111.0.5563.111)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6c883ef61de930d81b0b566e376d3a8, clickElement {id=d5c6b216-967c-4202-aac3-532f633ce1fe}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\simon\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60019}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60019/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f6c883ef61de930d81b0b566e376d3a8)] -> name: signed]
+Session ID: f6c883ef61de930d81b0b566e376d3a8<br /> 
+******************************************************************** <br /> 
+[java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br> java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br> java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)<br> org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br> org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br> org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br> org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br> org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)<br> org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)<br> org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br> org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)<br> org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)<br> pages.DocumentEditPage.selectSign(DocumentEditPage.java:126)<br> DocumentTest.documentOrderCreationAndEditing(DocumentTest.java:198)<br> java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br> java.base/java.lang.reflect.Method.invoke(Method.java:577)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br> org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:829)<br> org.testng.TestRunner.run(TestRunner.java:602)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br> org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)<br> org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)<br> java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br> java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)<br> java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)<br> java.base/java.lang.Thread.run(Thread.java:833)]</details>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="52"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkOpenedInvoicePageUrls</p>
+            <p class="text-sm">
+              <span>1:22:58 PM</span> / <span>00:00:46:586</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkOpenedInvoicePageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:22:58 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:23:45 PM</span>
+<span class='badge badge-default'>00:00:46:586</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=52</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:22:58 PM</td>
+        <td>
+          Test FindErrorTest -> checkOpenedInvoicePageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:23:45 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkOpenedInvoicePageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="53"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">DocumentTest: fileCreationAndEditing</p>
+            <p class="text-sm">
+              <span>1:23:20 PM</span> / <span>00:00:14:839</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">DocumentTest: fileCreationAndEditing</h5>
+<span class='badge badge-success'>03.31.2023 1:23:20 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:23:35 PM</span>
+<span class='badge badge-default'>00:00:14:839</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=53</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:23:20 PM</td>
+        <td>
+          Test DocumentTest -> fileCreationAndEditing successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:23:35 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test fileCreationAndEditing passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="54"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.CreditInvoiceTest: createNewInvoice</p>
+            <p class="text-sm">
+              <span>1:23:39 PM</span> / <span>00:00:10:458</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.CreditInvoiceTest: createNewInvoice</h5>
+<span class='badge badge-success'>03.31.2023 1:23:39 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:23:50 PM</span>
+<span class='badge badge-default'>00:00:10:458</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=54</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:23:39 PM</td>
+        <td>
+          Test financialTest.CreditInvoiceTest -> createNewInvoice successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:23:50 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createNewInvoice passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="55"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkOpenedNotePageUrls</p>
+            <p class="text-sm">
+              <span>1:23:45 PM</span> / <span>00:00:15:139</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkOpenedNotePageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:23:45 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:24:00 PM</span>
+<span class='badge badge-default'>00:00:15:139</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=55</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:23:45 PM</td>
+        <td>
+          Test FindErrorTest -> checkOpenedNotePageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:24:00 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkOpenedNotePageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="56"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.CreditInvoiceTest: createEditCreditInvoice</p>
+            <p class="text-sm">
+              <span>1:23:50 PM</span> / <span>00:00:16:228</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.CreditInvoiceTest: createEditCreditInvoice</h5>
+<span class='badge badge-success'>03.31.2023 1:23:50 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:24:06 PM</span>
+<span class='badge badge-default'>00:00:16:228</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=56</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:23:50 PM</td>
+        <td>
+          Test financialTest.CreditInvoiceTest -> createEditCreditInvoice successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:24:06 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createEditCreditInvoice passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="57"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkOpenedOrderPageUrls</p>
+            <p class="text-sm">
+              <span>1:24:00 PM</span> / <span>00:00:12:280</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkOpenedOrderPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:24:00 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:24:12 PM</span>
+<span class='badge badge-default'>00:00:12:280</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=57</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:24:00 PM</td>
+        <td>
+          Test FindErrorTest -> checkOpenedOrderPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:24:12 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkOpenedOrderPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="58"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">financialTest.PaymentTest: createEditDeletePayment</p>
+            <p class="text-sm">
+              <span>1:24:07 PM</span> / <span>00:01:03:025</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">financialTest.PaymentTest: createEditDeletePayment</h5>
+<span class='badge badge-success'>03.31.2023 1:24:07 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:25:10 PM</span>
+<span class='badge badge-default'>00:01:03:025</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:24:07 PM</td>
+        <td>
+          Test financialTest.PaymentTest -> createEditDeletePayment successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:25:10 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createEditDeletePayment passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="59"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkOpenedPreInvoicePageUrls</p>
+            <p class="text-sm">
+              <span>1:24:12 PM</span> / <span>00:02:09:801</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkOpenedPreInvoicePageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:24:12 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:26:22 PM</span>
+<span class='badge badge-default'>00:02:09:801</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=59</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:24:12 PM</td>
+        <td>
+          Test FindErrorTest -> checkOpenedPreInvoicePageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:26:22 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkOpenedPreInvoicePageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="60"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ClientTest: addNewManager</p>
+            <p class="text-sm">
+              <span>1:25:10 PM</span> / <span>00:00:12:238</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ClientTest: addNewManager</h5>
+<span class='badge badge-success'>03.31.2023 1:25:10 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:25:23 PM</span>
+<span class='badge badge-default'>00:00:12:238</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=60</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:25:10 PM</td>
+        <td>
+          Test ClientTest -> addNewManager successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:25:23 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test addNewManager passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="61"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ClientTest: clientContactLink</p>
+            <p class="text-sm">
+              <span>1:25:23 PM</span> / <span>00:00:18:673</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ClientTest: clientContactLink</h5>
+<span class='badge badge-success'>03.31.2023 1:25:23 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:25:41 PM</span>
+<span class='badge badge-default'>00:00:18:673</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=61</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:25:23 PM</td>
+        <td>
+          Test ClientTest -> clientContactLink successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:25:41 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test clientContactLink passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="63"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ClientTest: clientEditTest</p>
+            <p class="text-sm">
+              <span>1:26:17 PM</span> / <span>00:00:30:220</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ClientTest: clientEditTest</h5>
+<span class='badge badge-success'>03.31.2023 1:26:17 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:26:47 PM</span>
+<span class='badge badge-default'>00:00:30:220</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=63</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:17 PM</td>
+        <td>
+          Test ClientTest -> clientEditTest successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:26:47 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test clientEditTest passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="64"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkOpenedServicesGroupPageUrls</p>
+            <p class="text-sm">
+              <span>1:26:22 PM</span> / <span>00:00:11:123</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkOpenedServicesGroupPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:26:22 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:26:33 PM</span>
+<span class='badge badge-default'>00:00:11:123</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=64</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:22 PM</td>
+        <td>
+          Test FindErrorTest -> checkOpenedServicesGroupPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:26:33 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkOpenedServicesGroupPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="65"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkOpenedServicesPageUrls</p>
+            <p class="text-sm">
+              <span>1:26:33 PM</span> / <span>00:00:09:427</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkOpenedServicesPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:26:33 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:26:43 PM</span>
+<span class='badge badge-default'>00:00:09:427</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=65</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:33 PM</td>
+        <td>
+          Test FindErrorTest -> checkOpenedServicesPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:26:43 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkOpenedServicesPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="66"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkOrderCalendarPageUrls</p>
+            <p class="text-sm">
+              <span>1:26:43 PM</span> / <span>00:00:13:698</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkOrderCalendarPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:26:43 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:26:56 PM</span>
+<span class='badge badge-default'>00:00:13:698</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=66</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:43 PM</td>
+        <td>
+          Test FindErrorTest -> checkOrderCalendarPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:26:56 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkOrderCalendarPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="67"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ClientTest: createClientFirstCombination</p>
+            <p class="text-sm">
+              <span>1:26:47 PM</span> / <span>00:00:27:836</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ClientTest: createClientFirstCombination</h5>
+<span class='badge badge-success'>03.31.2023 1:26:47 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:27:15 PM</span>
+<span class='badge badge-default'>00:00:27:836</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=67</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:47 PM</td>
+        <td>
+          Test ClientTest -> createClientFirstCombination successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:27:15 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createClientFirstCombination passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="68"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkOrderPageUrls</p>
+            <p class="text-sm">
+              <span>1:26:56 PM</span> / <span>00:00:39:527</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkOrderPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:26:56 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:27:36 PM</span>
+<span class='badge badge-default'>00:00:39:527</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=68</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:26:56 PM</td>
+        <td>
+          Test FindErrorTest -> checkOrderPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:27:36 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkOrderPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="69"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ClientTest: createClientSecondCombinationAndEdit</p>
+            <p class="text-sm">
+              <span>1:27:15 PM</span> / <span>00:00:40:693</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ClientTest: createClientSecondCombinationAndEdit</h5>
+<span class='badge badge-success'>03.31.2023 1:27:15 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:27:56 PM</span>
+<span class='badge badge-default'>00:00:40:693</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=69</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:15 PM</td>
+        <td>
+          Test ClientTest -> createClientSecondCombinationAndEdit successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:27:56 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createClientSecondCombinationAndEdit passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="70"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkPreInvoicePageUrls</p>
+            <p class="text-sm">
+              <span>1:27:36 PM</span> / <span>00:02:05:372</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkPreInvoicePageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:27:36 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:29:41 PM</span>
+<span class='badge badge-default'>00:02:05:372</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=70</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:36 PM</td>
+        <td>
+          Test FindErrorTest -> checkPreInvoicePageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:41 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkPreInvoicePageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="71"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ClientTest: createEditDeleteContact</p>
+            <p class="text-sm">
+              <span>1:27:56 PM</span> / <span>00:00:14:803</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ClientTest: createEditDeleteContact</h5>
+<span class='badge badge-success'>03.31.2023 1:27:56 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:28:11 PM</span>
+<span class='badge badge-default'>00:00:14:803</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=71</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:27:56 PM</td>
+        <td>
+          Test ClientTest -> createEditDeleteContact successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:28:11 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test createEditDeleteContact passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="72"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ClientTest: documentLink</p>
+            <p class="text-sm">
+              <span>1:28:11 PM</span> / <span>00:00:10:812</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ClientTest: documentLink</h5>
+<span class='badge badge-success'>03.31.2023 1:28:11 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:28:22 PM</span>
+<span class='badge badge-default'>00:00:10:812</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=72</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:11 PM</td>
+        <td>
+          Test ClientTest -> documentLink successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:28:22 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test documentLink passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="73"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ClientTest: financeLink</p>
+            <p class="text-sm">
+              <span>1:28:22 PM</span> / <span>00:00:09:334</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ClientTest: financeLink</h5>
+<span class='badge badge-success'>03.31.2023 1:28:22 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:28:31 PM</span>
+<span class='badge badge-default'>00:00:09:334</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=73</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:22 PM</td>
+        <td>
+          Test ClientTest -> financeLink successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:28:31 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test financeLink passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="74"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ClientTest: managerLink</p>
+            <p class="text-sm">
+              <span>1:28:31 PM</span> / <span>00:00:07:230</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ClientTest: managerLink</h5>
+<span class='badge badge-success'>03.31.2023 1:28:31 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:28:38 PM</span>
+<span class='badge badge-default'>00:00:07:230</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=74</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:31 PM</td>
+        <td>
+          Test ClientTest -> managerLink successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:28:38 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test managerLink passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="75"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ClientTest: orderLink</p>
+            <p class="text-sm">
+              <span>1:28:38 PM</span> / <span>00:00:09:185</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ClientTest: orderLink</h5>
+<span class='badge badge-success'>03.31.2023 1:28:38 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:28:47 PM</span>
+<span class='badge badge-default'>00:00:09:185</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=75</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:28:38 PM</td>
+        <td>
+          Test ClientTest -> orderLink successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:28:47 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test orderLink passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="76"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkReportsActivitePageUrls</p>
+            <p class="text-sm">
+              <span>1:29:41 PM</span> / <span>00:00:12:744</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkReportsActivitePageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:29:41 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:29:54 PM</span>
+<span class='badge badge-default'>00:00:12:744</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=76</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:29:41 PM</td>
+        <td>
+          Test FindErrorTest -> checkReportsActivitePageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:29:54 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkReportsActivitePageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="77"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkReportsPaymentPageUrls</p>
+            <p class="text-sm">
+              <span>1:29:54 PM</span> / <span>00:00:15:087</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkReportsPaymentPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:29:54 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:30:09 PM</span>
+<span class='badge badge-default'>00:00:15:087</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=77</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:29:54 PM</td>
+        <td>
+          Test FindErrorTest -> checkReportsPaymentPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:09 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkReportsPaymentPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="78"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkReportsSellPageUrls</p>
+            <p class="text-sm">
+              <span>1:30:09 PM</span> / <span>00:00:47:107</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkReportsSellPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:30:09 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:30:56 PM</span>
+<span class='badge badge-default'>00:00:47:107</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=78</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:09 PM</td>
+        <td>
+          Test FindErrorTest -> checkReportsSellPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:30:56 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkReportsSellPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="79"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkServicesGroupPageUrls</p>
+            <p class="text-sm">
+              <span>1:30:56 PM</span> / <span>00:00:10:526</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkServicesGroupPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:30:56 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:31:07 PM</span>
+<span class='badge badge-default'>00:00:10:526</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=79</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:30:56 PM</td>
+        <td>
+          Test FindErrorTest -> checkServicesGroupPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:07 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkServicesGroupPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="80"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkServicesPageUrls</p>
+            <p class="text-sm">
+              <span>1:31:07 PM</span> / <span>00:00:10:405</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkServicesPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:31:07 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:31:17 PM</span>
+<span class='badge badge-default'>00:00:10:405</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=80</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:07 PM</td>
+        <td>
+          Test FindErrorTest -> checkServicesPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:17 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkServicesPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="81"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FindErrorTest: checkUserGroupPageUrls</p>
+            <p class="text-sm">
+              <span>1:31:17 PM</span> / <span>00:00:17:579</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FindErrorTest: checkUserGroupPageUrls</h5>
+<span class='badge badge-success'>03.31.2023 1:31:17 PM</span>
+<span class='badge badge-danger'>03.31.2023 1:31:35 PM</span>
+<span class='badge badge-default'>00:00:17:579</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=81</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:17 PM</td>
+        <td>
+          Test FindErrorTest -> checkUserGroupPageUrls successfully started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:35 PM</td>
+        <td>
+          <span class='badge white-text green'><b>Test checkUserGroupPageUrls passed successfully</b></span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="spark/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
